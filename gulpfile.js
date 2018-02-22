@@ -8,14 +8,16 @@ var jshint = require('gulp-jshint');
 var replace = require('gulp-string-replace');
 var report = require('jshint-stylish');
 var reportHtml = require('gulp-jshint-html-reporter');
-deletefile = require('gulp-delete-file');
+deletefile = require('gulp-clean');
 
 
 gulp.task('jshint', function () {
     return gulp.src('source/javascript/*.js').pipe(jshint())
         .pipe(jshint.reporter(report));
 });
+
 gulp.task('jshintHtml', function () {
+    gulp.src('log').pipe(deletefile());
     return gulp.src('source/javascript/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter(reportHtml, {
