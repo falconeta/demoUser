@@ -2,8 +2,20 @@
 /*global $*/
 $(document).ready(function () {
     "use strict";
-    $('#loading').loading('toggle');
-    $.getJSON('https://randomuser.me/api/', paginaCaricata);
+    $('#loading').loading({
+        theme: 'dark',
+        message:'one moment...',
+        hiddenClass:'loading-hidden',
+        onStart: function(loading) {
+          loading.overlay.slideDown(400);
+        },
+        onStop: function(loading) {
+          loading.overlay.slideUp(400);
+        }
+      },'toggle');
+    setTimeout(function(){$.getJSON('https://randomuser.me/api/', paginaCaricata);
+},1500);
+    
 });
 
 function paginaCaricata(data) {
@@ -30,6 +42,7 @@ function paginaCaricata(data) {
             break;
         default:
     }
+    $('#loading').loading('toggle');
 }
 function carica(id, value) {// funzione di caricamento
     "use strict";
