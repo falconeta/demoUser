@@ -1,8 +1,13 @@
 /*exported paginaCaricata */
-/*global extractRandomUser*/
-function paginaCaricata() {
+/*global $*/
+$(document).ready(function () {
     "use strict";
-    var persona = extractRandomUser('it');
+    $.getJSON('https://randomuser.me/api/', paginaCaricata);
+});
+
+function paginaCaricata(data) {
+    "use strict";
+    var persona = data.results[0];
     var userId = ['email', 'born', 'name', 'gender', 'street', 'city', 'state', 'postcode', 'image'];
     var userValue = [persona.email, persona.dob, persona.name.first + ' ' + persona.name.last,
     persona.gender, persona.location.street, persona.location.city,
@@ -22,7 +27,8 @@ function paginaCaricata() {
         case 'Female':
             genderImage.src = 'https://png.icons8.com/metro/1600/female.png';
             break;
-        default:}
+        default:
+    }
 }
 function carica(id, value) {// funzione di caricamento
     "use strict";

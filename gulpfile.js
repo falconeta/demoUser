@@ -30,7 +30,7 @@ gulp.task('jshintHtml', function () {
 gulp.task('build', function () {
     gulp.src('source/html/*.html')
         .pipe(replace('../css/style.css', 'style.css'))
-        .pipe(replace('<script src="../javascript/userGenerator.js"></script>', ''))
+        .pipe(replace('<script src="../../node_modules/jquery/dist/jquery.js"></script>', '<script src="../node_modules/jquery/dist/jquery.js"></script>'))
         .pipe(replace('<script src="../javascript/index.js"></script>', '<script src="bundle.js"></script>'))
         .pipe(gulp.dest('dist'));
     gulp.src('source/css/*.css').pipe(gulp.dest('dist'));
