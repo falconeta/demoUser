@@ -17,4 +17,15 @@ gulp.task('jshint', function(){
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
+gulp.task('copiaHtml',function(){
+    gulp.src('source/html/*.html').pipe(gulp.dest('dist'));
+    gulp.src('source/javascript/*.js').pipe(gulp.dest('dist'));
+});
 
+gulp.task('build-js', function(){
+    return gulp.src('source/javascript/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(concat('bundle.js'))
+    .pipe(uglify()).pipe(sourcemaps.write())
+    .pipe(gulp.dest('dist'));
+});
