@@ -9,7 +9,7 @@ header{
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    height: 70px;
+    height: auto;
     background-color: rgb(48, 47, 47);
     padding: 20px;
     color: white;

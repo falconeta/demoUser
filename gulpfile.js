@@ -25,13 +25,13 @@ gulp.task('jshintHtml', function () {
             createMissingFolders: true
         }));
 });
-
-
 gulp.task('build', function () {
     gulp.src('source/html/*.html')
         .pipe(replace('../css/style.css', 'style.css'))
         .pipe(replace('<script src="../../node_modules/jquery/dist/jquery.js"></script>', '<script src="../node_modules/jquery/dist/jquery.js"></script>'))
         .pipe(replace('<script src="../javascript/index.js"></script>', '<script src="bundle.js"></script>'))
+        .pipe(replace('<script src="../../node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>', '<script src="../node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>'))
+        .pipe(replace('../../node_modules/jquery-easy-loading/dist/jquery.loading.css', '../node_modules/jquery-easy-loading/dist/jquery.loading.css'))
         .pipe(gulp.dest('dist'));
     gulp.src('source/css/*.css').pipe(gulp.dest('dist'));
     gulp.src('source/javascript/*.js')
