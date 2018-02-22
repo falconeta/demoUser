@@ -2,6 +2,7 @@
 /*global $*/
 $(document).ready(function () {
     "use strict";
+    $('#loading').loading('toggle');
     $.getJSON('https://randomuser.me/api/', paginaCaricata);
 });
 
