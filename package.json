@@ -22,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/falconeta/demoUser/issues"
   },
-  "homepage": "https://github.com/falconeta/demoUser#readme"
+  "homepage": "https://github.com/falconeta/demoUser#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-uglify": "3.0.0",
+    "gulp-util": "3.0.8",
+    "jshint": "2.9.5",
+    "jshint-stylish": "2.2.1",
+    "logmon": "0.0.1"
+  }
 }
