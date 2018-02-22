@@ -1,0 +1,26 @@
+{
+  "name": "demouser",
+  "version": "1.0.0",
+  "description": "first demo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falconeta/demoUser.git"
+  },
+  "keywords": [
+    "user",
+    "npm",
+    "git",
+    "binding",
+    "js"
+  ],
+  "author": "Vittorio Lo Preiato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falconeta/demoUser/issues"
+  },
+  "homepage": "https://github.com/falconeta/demoUser#readme"
+}

@@ -1,0 +1,174 @@
+body{
+    background-color: #F7EBD4;
+    font-family:  Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+header{
+    position: relative;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    height: 70px;
+    background-color: rgb(48, 47, 47);
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    font-size: 1.2em;
+}
+.headers{
+    padding: 18px;
+}
+nav{  
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0px;
+    text-align: center;
+    margin: 0px 0px 0px 0; 
+}
+nav li{
+    border: 1px solid grey;
+    padding: 5px;
+    color: rgb(36, 33, 33);
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    
+
+}
+div li{
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: bisque;
+    color: rgb(36, 33, 33);
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 0px #333333;
+
+}
+nav ul{
+    padding: 0px;
+}
+div ul{
+    padding: 0px;
+}
+.button{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0px;
+    text-align: center;
+    margin: 0px 0px 0px 0;
+}
+a:link, a:visited {
+    color: rgb(36, 33, 33);
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
+  }
+.profile{
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px #000000;
+    border-radius: 1000px;
+}
+.floating-box{
+    display: inline-block;
+    width: 42%;
+    margin: 10px ;
+}
+strong{
+    margin: 0px 0px 0px -5px;
+}
+.pform{
+    text-align: center;
+}
+.info{
+    position: relative;
+    display: block;
+    background-color: firebrick;
+}
+section{
+    background-color: #F7EBD4;
+    position: relative;
+    max-width: 600px;
+    margin: 0  auto;
+    padding: 1px 10px 5px 10px;
+    /*box-shadow: 3px 3px 3px #dedede;*/
+}
+article{
+    
+    font-weight: lighter;
+    background-color: #F7EBD4;
+    padding:10px;
+    margin: 0px 0 30px 0;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px 0px #333333;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center; 
+    margin: 00px 0 0 0;
+    
+}
+h5{
+    font-weight: lighter;
+    color: wheat;
+    text-align: center;
+    margin: 0px 0 0 0;
+}
+
+.job{
+    text-align: center;
+    font-size: 0.7em;
+    margin: -20px 0 0 0;
+}
+
+footer{
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(23, 26, 23);
+    padding: 1px;
+    margin-top: 20px;
+    color: white;
+}
+input[type=email], [type=text],  select, [type=submit], [type=reset] {
+    display: inline-block;
+    font: 1em  Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    width: 49%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(36, 33, 33);
+    padding: 10px 20px;
+    margin: 0px 0 0 0 ;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px #333333;
+    
+}
+.bottoni {
+    background-color: bisque;
+}
+textarea{
+    font: 1em  Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    padding: 1px 2px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.resizeFooter{
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    width: 5%;
+}
