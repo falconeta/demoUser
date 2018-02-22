@@ -13,7 +13,7 @@ gulp.task('default', function(){
 
 
 gulp.task('jshint', function(){
-    return gulp.src('weather.js').pipe(jshint())
+    return gulp.src('userGenerator.js').pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
