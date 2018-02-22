@@ -6,13 +6,24 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var replace = require('gulp-string-replace');
+var report = require('jshint-stylish');
+var reportHtml = require('gulp-jshint-html-reporter');
+deletefile = require('gulp-clean');
 
 
 gulp.task('jshint', function () {
-    return gulp.src('source/javascript/userGenerator.js').pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish')),
-        gulp.src('source/javascript/index.js').pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'));
+    return gulp.src('source/javascript/*.js').pipe(jshint())
+        .pipe(jshint.reporter(report));
+});
+
+gulp.task('jshintHtml', function () {
+    gulp.src('log').pipe(deletefile());
+    return gulp.src('source/javascript/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter(reportHtml, {
+            filename: __dirname + '/log/reportQuality.html',
+            createMissingFolders: true
+        }));
 });
 
 
