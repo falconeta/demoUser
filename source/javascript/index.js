@@ -1,4 +1,7 @@
+/*exported paginaCaricata */
+/*global extractRandomUser*/
 function paginaCaricata() {
+    "use strict";
     var persona = extractRandomUser('it');
     var userId = ['email', 'born', 'name', 'gender', 'street', 'city', 'state', 'postcode', 'image'];
     var userValue = [persona.email, persona.dob, persona.name.first + ' ' + persona.name.last,
@@ -22,8 +25,9 @@ function paginaCaricata() {
         default:}
 }
 function carica(id, value) {// funzione di caricamento
+    "use strict";
     var name = document.getElementById(id);
     if (id === 'image') {
         name.src = value;
-    } else { name.innerText = value }
+    } else { name.innerText = value; }
 }
