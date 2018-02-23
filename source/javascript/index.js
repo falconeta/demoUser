@@ -4,6 +4,7 @@
 /*global $*/
 function loadMain() {
     "use strict";
+    $('#image').hide('toggle');
     $('#loading').loading({
         theme: 'dark',
         message: 'one moment...',
@@ -16,25 +17,13 @@ function loadMain() {
         }
     }, 'toggle');
     setTimeout(function () {
-        $.getJSON('https://randomuser.me/api/', paginaCaricata);
+        $.getJSON('https://randomuser.me/api', paginaCaricata);
     }, 1500);
 }
 function contact() {
     "use strict";
     $('#submit').click(function () {
-        var name=$('#fname').val();
-        var surname=$('#fsurname').val();
-        var email=$('#femail').val();
-        var per={
-            "name":{
-                "first":name,
-                "last": surname,
-            },
-            "email": email
-        };      
-        $.post('http://localhost:3000/results', per).done(function (data) {
-            alert("data loaded: " + data);
-        });
+        $.post('http://localhost:3000/results', $('#contact').serialize());
     });
 }
 
@@ -63,6 +52,7 @@ function paginaCaricata(data) {
         default:
     }
     $('#loading').loading('toggle');
+    $('#image').show('toggle');
 }
 function carica(id, value) {// funzione di caricamento
     "use strict";
