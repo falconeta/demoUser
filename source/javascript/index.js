@@ -22,14 +22,16 @@ function loadMain() {
 function contact() {
     "use strict";
     $('#submit').click(function () {
-        console.log('insiede click');
-        var per = {
-            "name": {
-                "title": "mr",
-                "first": "Vittorio",
-                "last": "Mertens"
+        var name=$('#fname').val();
+        var surname=$('#fsurname').val();
+        var email=$('#femail').val();
+        var per={
+            "name":{
+                "first":name,
+                "last": surname,
             },
-        };
+            "email": email
+        };      
         $.post('http://localhost:3000/results', per).done(function (data) {
             alert("data loaded: " + data);
         });
