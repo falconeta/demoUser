@@ -1,22 +1,40 @@
 /*exported paginaCaricata */
+/*exported loadMain */
+/*exported contact */
 /*global $*/
-$(document).ready(function () {
+function loadMain() {
     "use strict";
     $('#loading').loading({
         theme: 'dark',
-        message:'one moment...',
-        hiddenClass:'loading-hidden',
-        onStart: function(loading) {
-          loading.overlay.slideDown(400);
+        message: 'one moment...',
+        hiddenClass: 'loading-hidden',
+        onStart: function (loading) {
+            loading.overlay.slideDown(400);
         },
-        onStop: function(loading) {
-          loading.overlay.slideUp(400);
+        onStop: function (loading) {
+            loading.overlay.slideUp(400);
         }
-      },'toggle');
-    setTimeout(function(){$.getJSON('https://randomuser.me/api/', paginaCaricata);
-},1500);
-    
-});
+    }, 'toggle');
+    setTimeout(function () {
+        $.getJSON('https://randomuser.me/api/', paginaCaricata);
+    }, 1500);
+}
+function contact() {
+    "use strict";
+    $('#submit').click(function () {
+        console.log('insiede click');
+        var per = {
+            "name": {
+                "title": "mr",
+                "first": "Vittorio",
+                "last": "Mertens"
+            },
+        };
+        $.post('http://localhost:3000/results', per).done(function (data) {
+            alert("data loaded: " + data);
+        });
+    });
+}
 
 function paginaCaricata(data) {
     "use strict";
