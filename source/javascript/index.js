@@ -1,22 +1,31 @@
 /*exported paginaCaricata */
+/*exported loadMain */
+/*exported contact */
 /*global $*/
-$(document).ready(function () {
+function loadMain() {
     "use strict";
+    $('#image').hide('toggle');
     $('#loading').loading({
         theme: 'dark',
-        message:'one moment...',
-        hiddenClass:'loading-hidden',
-        onStart: function(loading) {
-          loading.overlay.slideDown(400);
+        message: 'one moment...',
+        hiddenClass: 'loading-hidden',
+        onStart: function (loading) {
+            loading.overlay.slideDown(400);
         },
-        onStop: function(loading) {
-          loading.overlay.slideUp(400);
+        onStop: function (loading) {
+            loading.overlay.slideUp(400);
         }
-      },'toggle');
-    setTimeout(function(){$.getJSON('https://randomuser.me/api/', paginaCaricata);
-},1500);
-    
-});
+    }, 'toggle');
+    setTimeout(function () {
+        $.getJSON('https://randomuser.me/api', paginaCaricata);
+    }, 1500);
+}
+function contact() {
+    "use strict";
+    $('#submit').click(function () {
+        $.post('http://localhost:3000/results', $('#contact').serialize());
+    });
+}
 
 function paginaCaricata(data) {
     "use strict";
@@ -43,6 +52,7 @@ function paginaCaricata(data) {
         default:
     }
     $('#loading').loading('toggle');
+    $('#image').show('toggle');
 }
 function carica(id, value) {// funzione di caricamento
     "use strict";
