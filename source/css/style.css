@@ -1,48 +1,36 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #F7EBD4;
     font-family:  Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     margin: 0px;
     font-weight: lighter}
 header{
-    position: relative;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
-    height: auto;
     background-color: rgb(48, 47, 47);
     padding: 20px;
     color: white;
     font-size: 1.2em}
-.headers{padding: 18px}
-nav{   
+ul{   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     margin: 0px 0px 0px 0}
-nav li {
+li {
+    list-style-type: none;
     border: 1px solid grey;
     padding: 5px;
     color: rgb(36, 33, 33);
-    display: inline-block;
     margin: 10px 10px 10px 10px}       
-div li{
-    border: 1px solid grey;
-    padding: 5px;
-    background-color: bisque;
-    color: rgb(36, 33, 33);
-    display: inline-block;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 5px 0px #333333}
-nav ul{padding: 0px}
-div ul{padding: 0px}
-.button{
-    font-size: 1em;
-    text-transform: uppercase;
-    padding: 0px;
-    text-align: center;
-    margin: 0px 0px 0px 0}
 a{transition: all 0.5s ease}
 a:link, a:visited {
     color: rgb(36, 33, 33);
@@ -52,37 +40,25 @@ a:hover {
     color: red;
     text-decoration: none}
 .profile{
-    width: 100%;
+    width: 90%;
     box-shadow: 0px 0px 5px 1px #000000;
     border-radius: 1000px;
     padding: 8px}
-.floating-box{
-    float: right;
-    width: 270px;
-    margin: 10px;
-    clear: both}
 .center{
-    display: inline-block;
-    position: relative;
+    align-self: center;
     width: 260px;
-    margin: 50px 0 0 0 ;
-    padding: 0px}
+    margin: 0}
 strong{margin: 0px 0px 0px -5px}
 p{margin: 0}
 .borderBottom{border-bottom: 1px solid black}
 .pform{text-align: center}
-.info{
-    position: relative;
-    display: block;
-    background-color: firebrick}
 section{
-    height: 100%;
-    position: relative;
     max-width: 600px;
-    margin: 0  auto;
     padding: 1px 10px 5px 10px}
 article{ 
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-weight: lighter;
     text-align: justify;
     background-color: #F7EBD4;
@@ -91,26 +67,44 @@ article{
     font-size: 1em;
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 10px 0px #333333}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
 .h{
     text-transform: uppercase;
     font-weight: lighter;
-    text-align: center; 
     margin: 0}
 h4{text-transform: uppercase; text-align: center}
 h5{color: wheat}
 .job{
     text-align: center;
-    font-size: 0.7em}
+    font-size: 0.7em;
+    justify-content: center} 
+p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
 footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
     text-transform: uppercase;
-    font-weight: 100;
-    text-align: center;
     font-size: 1.5em;
     background-color: rgb(23, 26, 23);
     padding: 20px;
     color: white}
+form{
+    display: flex;
+    width:100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .form{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     font: 1em  Helvetica, Arial, sans-serif;
     font-weight: lighter;
     width: 49%;
@@ -124,11 +118,15 @@ footer{
 .bottoni {background-color: bisque}
 #comments{width:92.9%}
 .resizeFooter{
-    display: inline-block;
-    margin: 0 20px 0 20px;
-    width: 5%}
+    margin: 0 60px 0 20px;
+    width: 3vh}
+#contGender{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black
+}
 .gender{
-    float: left;
     margin: 0px 5px 0 0;
     padding: 0px;
     max-width: 20px}
