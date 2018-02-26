@@ -1,5 +1,6 @@
-html, body{
-    height: 100%;
+body{
+    height: 100vh;
+    display: flex;
     background-color: #F7EBD4;
     font-family:  Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
