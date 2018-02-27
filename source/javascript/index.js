@@ -4,7 +4,8 @@
 /*global $*/
 function loadMain() {
     "use strict";
-    $('#image').hide('toggle');
+    $('#all').css('display','none');
+    //$('#all').hide('toggle');
     $('#loading').loading({
         theme: 'dark',
         message: 'one moment...',
@@ -26,7 +27,6 @@ function contact() {
         $.post('http://localhost:3000/results', $('#contact').serialize());
     });
 }
-
 function paginaCaricata(data) {
     "use strict";
     var persona = data.results[0];
@@ -52,7 +52,7 @@ function paginaCaricata(data) {
         default:
     }
     $('#loading').loading('toggle');
-    $('#image').show('toggle');
+    $('#all').show('toggle');
 }
 function carica(id, value) {// funzione di caricamento
     "use strict";
