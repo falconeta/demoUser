@@ -1,22 +1,30 @@
-body{
-    height: 100vh;
+body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     align-items: center;
     background-color: #F7EBD4;
-    font-family:  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     margin: 0px;
-    font-weight: lighter}
-header{
+    font-weight: lighter;
+}
+
+.container {
+    flex:1;
+}
+
+header {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(48, 47, 47);
     padding: 20px;
     color: white;
-    font-size: 1.2em}
-ul{   
+    font-size: 1.2em;
+}
+
+ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -24,85 +32,130 @@ ul{
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
-    margin: 0px 0px 0px 0}
+    margin: 0px 0px 0px 0;
+}
+
 li {
     list-style-type: none;
     border: 1px solid grey;
     padding: 5px;
     color: rgb(36, 33, 33);
-    margin: 10px 10px 10px 10px}       
-a{transition: all 0.5s ease}
+    margin: 10px 10px 10px 10px;
+}
+
+a {
+    transition: all 0.5s ease;
+}
+
 a:link, a:visited {
     color: rgb(36, 33, 33);
-    text-decoration: none}
+    text-decoration: none;
+}
+
 a:hover {
-    width:400px;
+    width: 400px;
     color: red;
-    text-decoration: none}
-.profile{
+    text-decoration: none;
+}
+
+.profile {
     width: 90%;
     box-shadow: 0px 0px 5px 1px #000000;
     border-radius: 1000px;
-    padding: 8px}
-.center{
+    padding: 8px;
+}
+
+.center {
     align-self: center;
     width: 260px;
-    margin: 0}
-strong{margin: 0px 0px 0px -5px}
-p{margin: 0}
-.borderBottom{border-bottom: 1px solid black}
-.pform{text-align: center}
-section{
+    margin: 0;
+}
+
+strong {
+    margin: 0px 0px 0px -5px;
+}
+
+p {
+    margin: 0;
+}
+
+.borderBottom {
+    border-bottom: 1px solid black;
+}
+
+.pform {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     max-width: 600px;
-    padding: 1px 10px 5px 10px}
-article{ 
+    padding: 1px 10px 5px 10px;
+}
+
+article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-weight: lighter;
     text-align: justify;
     background-color: #F7EBD4;
-    padding:10px;
+    padding: 10px;
     margin: 0px 0 30px 0;
     font-size: 1em;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 0px #333333}
-.cont{
+    box-shadow: 0px 0px 10px 0px #333333;
+}
+
+.cont {
     display: flex;
     flex-direction: column;
 }
-.h{
+
+.h {
     text-transform: uppercase;
     font-weight: lighter;
-    margin: 0}
-h4{text-transform: uppercase; text-align: center}
-h5{color: wheat}
-.job{
+    margin: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5 {
+    color: wheat;
+}
+
+.job {
     text-align: center;
     font-size: 0.7em;
-    justify-content: center} 
-p{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%
+    justify-content: center;
 }
-footer{
+
+footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    
     width: 100%;
-    align-items: center;
     text-transform: uppercase;
     font-size: 1.5em;
     background-color: rgb(23, 26, 23);
-    padding: 20px;
-    color: white}
-form{
+    padding: 40px;
+    color: white;
+}
+
+form {
     display: flex;
-    width:100vh;
+    width: 100vh;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.form{
+
+.form {
     display: flex;
     flex-wrap: wrap;
     font: 1em  Helvetica, Arial, sans-serif;
@@ -111,23 +164,33 @@ form{
     letter-spacing: 2px;
     color: rgb(36, 33, 33);
     padding: 10px 20px;
-    margin: 7px 0 20px 0 ;
+    margin: 7px 0 20px 0;
     border: 1px solid grey;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px 0px #333333}
-.bottoni {background-color: bisque}
-#comments{width:92.9%}
-.resizeFooter{
-    margin: 0 60px 0 20px;
-    width: 3vh}
-#contGender{
+    box-shadow: 0px 0px 5px 0px #333333;
+}
+
+.bottoni {
+    background-color: bisque;
+}
+
+#comments {
+    width: 92.9%;
+}
+
+#contGender {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
-.gender{
+
+.gender {
     margin: 0px 5px 0 0;
     padding: 0px;
-    max-width: 20px}
-.capitalize{text-transform: capitalize}
+    max-width: 20px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
