@@ -7,23 +7,21 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     margin: 0px;
-    font-weight: lighter;
-}
-
+    font-weight: lighter}
 .container {
-    flex:1;
-}
-
+    display: flex;
+    flex: 1}
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    text-align: center;
     text-transform: uppercase;
     background-color: rgb(48, 47, 47);
     padding: 20px;
     color: white;
-    font-size: 1.2em;
-}
-
+    font-size: 1.2em}
+nav {display: flex}
 ul {
     display: flex;
     justify-content: center;
@@ -32,53 +30,33 @@ ul {
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
-    margin: 0px 0px 0px 0;
-}
-
+    margin: 0px 0px 0px 0}
 li {
     list-style-type: none;
     border: 1px solid grey;
     padding: 5px;
     color: rgb(36, 33, 33);
-    margin: 10px 10px 10px 10px;
-}
-
-a {
-    transition: all 0.5s ease;
-}
-
+    margin: 10px 10px 10px 10px}
+a {transition: all 0.5s ease}
 a:link, a:visited {
     color: rgb(36, 33, 33);
-    text-decoration: none;
-}
-
+    text-decoration: none}
 a:hover {
     width: 400px;
     color: red;
-    text-decoration: none;
-}
-
+    text-decoration: none}
 .profile {
-    width: 90%;
+    min-width: 15rem;
+    min-height: 15rem;
     box-shadow: 0px 0px 5px 1px #000000;
     border-radius: 1000px;
-    padding: 8px;
-}
-
+    padding: 8px}
 .center {
+    display: flex;
     align-self: center;
-    width: 260px;
-    margin: 0;
-}
-
-strong {
-    margin: 0px 0px 0px -5px;
-}
-
-p {
-    margin: 0;
-}
-
+    margin: 1rem}
+strong {margin: 0px 0px 0px -5px}
+p {margin: 0}
 .borderBottom {
     border-bottom: 1px solid black;
 }
@@ -90,64 +68,38 @@ p {
 section {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    max-width: 600px;
-    padding: 1px 10px 5px 10px;
-}
-
+    max-width: 45rem;
+    padding: 1px 10px 5px 10px}
 article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-weight: lighter;
     text-align: justify;
     background-color: #F7EBD4;
     padding: 10px;
     margin: 0px 0 30px 0;
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 0px #333333;
-}
-
+    box-shadow: 0px 0px 10px 0px #333333}
 .cont {
     display: flex;
     flex-direction: column;
-}
-
-.h {
-    text-transform: uppercase;
+    min-width: 18rem;
+    margin: 1rem}
+.h {text-transform: uppercase;
     font-weight: lighter;
-    margin: 0;
-}
-
-h4 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h5 {
-    color: wheat;
-}
-
-.job {
-    text-align: center;
-    font-size: 0.7em;
-    justify-content: center;
-}
-
+    margin: 0;}
+h4 {text-transform: uppercase}
+h5 {color: wheat}
+.job {font-size: 0.7em}
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    text-transform: uppercase;
-    font-size: 1.5em;
     background-color: rgb(23, 26, 23);
-    padding: 40px;
-    color: white;
-}
-
+    padding: 20px;
+    color: white}
+.marginFooter{margin: 2rem}
 form {
     display: flex;
     width: 100vh;
@@ -184,13 +136,8 @@ form {
     align-items: center;
     border-bottom: 1px solid black;
 }
-
 .gender {
     margin: 0px 5px 0 0;
     padding: 0px;
-    max-width: 20px;
-}
-
-.capitalize {
-    text-transform: capitalize;
-}
+    max-width: 20px}
+.capitalize {text-transform: capitalize}
