@@ -5,7 +5,6 @@
 function loadMain() {
     "use strict";
     $('#all').css('display','none');
-    //$('#all').hide('toggle');
     $('#loading').loading({
         theme: 'dark',
         message: 'one moment...',
@@ -23,8 +22,11 @@ function loadMain() {
 }
 function contact() {
     "use strict";
-    $('#submit').click(function () {
-        $.post('http://localhost:3000/results', $('#contact').serialize());
+    $('#contact').submit(function () {
+        if (window.confirm("Do you really want to send the information?")) { 
+            $.post('http://localhost:3000/results', $('#contact').serialize());
+            alert("Thanks!");
+          }
     });
 }
 function paginaCaricata(data) {
