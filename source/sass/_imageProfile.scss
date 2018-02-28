@@ -1,0 +1,12 @@
+@import "_variable.scss";
+
+.profile {
+    min-width: 15rem;
+    min-height: 15rem;
+    box-shadow: 0px 0px 5px 1px $colorShadow;
+    border-radius: 1000px;
+    padding: 8px}
+.center {
+    display: flex;
+    align-self: center;
+    margin: 1rem}

@@ -1,0 +1,15 @@
+nav {display: flex}
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 0px 0px 0}
+li {
+    list-style-type: none;
+    border: 1px solid $colorBorderNav;
+    padding: 5px;
+    color: $colorTextNav;
+    margin: 10px 10px 10px 10px}

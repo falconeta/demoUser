@@ -1,0 +1,15 @@
+@import "_variable.scss";
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: $colorHeaderFooter;
+    padding: 20px;
+    color: $colorTextHeaderFooter;
+}
+
+.marginFooter {
+    margin: 2rem;
+}
