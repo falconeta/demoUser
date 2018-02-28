@@ -5,7 +5,7 @@
 
 function loadMain() {
     "use strict";
-    $('#all').css('display','none');
+    $('#all').css('display', 'none');
     $('#loading').loading({
         theme: 'dark',
         message: 'one moment...',
@@ -24,10 +24,10 @@ function loadMain() {
 function contact() {
     "use strict";
     $('#contact').submit(function () {
-        if (window.confirm("Do you really want to send the information?")) { 
+        if (window.confirm("Do you really want to send the information?")) {
             $.post('http://localhost:3000/results', $('#contact').serialize());
             alert("Thanks!");
-          }
+        }
     });
 }
 function paginaCaricata(data) {
@@ -60,8 +60,15 @@ function paginaCaricata(data) {
 function carica(id, value) {// funzione di caricamento
     "use strict";
     var name = document.getElementById(id);
-    if (id === 'image') {
-        name.src = value;
-    } else { name.innerText = value; }
+    if (value === undefined) {
+        if (id === 'image') {
+            name.src = "";
+        } else { name.innerText = "pippo"; }
+    }
+    else {
+        if (id === 'image') {
+            name.src = value;
+        } else { name.innerText = value; }
+    }
 }
-$( document ).ready(loadMain());
+$(document).ready(loadMain());
