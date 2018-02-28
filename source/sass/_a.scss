@@ -1,0 +1,11 @@
+@import "_variable.scss";
+a {transition: all 0.5s ease}
+a:link, a:visited {
+    color: $colorLink;
+    text-decoration: none}
+footer a:link, footer a:visited {
+    color: $colorLinkFooter;
+    text-decoration: none}
+a:hover, footer a:hover {
+    color: $colorHover;
+    text-decoration: none}

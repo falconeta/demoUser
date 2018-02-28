@@ -1,0 +1,17 @@
+@import "_variable.scss";
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: $colorHeaderFooter;
+    padding: 20px;
+    color: $colorTextHeaderFooter;;
+    font-size: 1.2em;
+}
+
+h5 {
+    color: $colorTextHeader;
+}

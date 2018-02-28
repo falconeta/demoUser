@@ -9,7 +9,18 @@ var replace = require('gulp-string-replace');
 var report = require('jshint-stylish');
 var reportHtml = require('gulp-jshint-html-reporter');
 deletefile = require('gulp-clean');
+const sass=require('gulp-sass');
 
+
+gulp.task('sass',function(){
+    return gulp.src('./source/sass/*scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./source/css'));
+});
+
+gulp.task('sass:watch', function(){
+    gulp.watch('./source/sass/*.scss', ['sass']);
+});
 
 gulp.task('jshint', function () {
     return gulp.src('source/javascript/*.js').pipe(jshint())

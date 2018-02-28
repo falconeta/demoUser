@@ -43,10 +43,10 @@ function paginaCaricata(data) {
     var gender = document.getElementById('gender');
     var genderImage = document.getElementById('imageGender');
     switch (gender.outerText) {
-        case 'Male':
+        case 'male':
             genderImage.src = 'https://png.icons8.com/metro/1600/male.png';
             break;
-        case 'Female':
+        case 'female':
             genderImage.src = 'https://png.icons8.com/metro/1600/female.png';
             break;
         default:
