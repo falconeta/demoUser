@@ -2,6 +2,7 @@
 /*exported loadMain */
 /*exported contact */
 /*global $*/
+
 function loadMain() {
     "use strict";
     $('#all').css('display','none');
@@ -63,3 +64,4 @@ function carica(id, value) {// funzione di caricamento
         name.src = value;
     } else { name.innerText = value; }
 }
+$( document ).ready(loadMain());
