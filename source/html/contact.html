@@ -27,43 +27,39 @@
         <section>
             <article>
                 <form action="" method="POST" id="contact">
-                    <p class="pform"><strong >SEND US YOUR REQUEST</strong> </p>
-                    <p>NAME:</p> <input type="text"  name="name.first" class="form" id="name.first" placeholder="Name" required>
-                   <p>SURNAME:</p> <input type="text"  name="name.last" class="form" id="name.last" placeholder="Surname" required>
-                    <p>E-MAIL:</p> <input type="email"  name="email" class="form" id="email" required placeholder="E-mail">
+                    <p class="pform">
+                        <strong>SEND US YOUR REQUEST</strong>
+                    </p>
+                    <p>NAME:</p>
+                    <input type="text" class="form" name="name.first" id="name.first" placeholder="Name" required>
+                    <p>SURNAME:</p>
+                    <input type="text" name="name.last" class="form" id="name.last" placeholder="Surname" required>
+                    <p>E-MAIL:</p>
+                    <input type="email" name="email" class="form" id="email" required placeholder="E-mail">
                     <br>
-                    <p>COMMENT:</p> <textarea name="comments" id="comments" class="form" cols="30" rows="10" style="resize:none; " placeholder="My question or comment"></textarea>
-                    <input type="reset" class="bottoni form" value="CLEAR">
-                    <input type="submit" class="bottoni form" id="submit" value="SUBMIT">
+                    <div class="comm">
+                        <p>COMMENT:</p>
+                        <textarea name="comments" id="comments" class="form" cols="100" rows="20" style="resize:none; " placeholder="My question or comment"></textarea>
+                    </div>
+                    <div class="contBot">
+                        <input type="reset" class="bottoni form" value="CLEAR">
+                        <input type="submit" class="bottoni form" id="submit" value="SUBMIT">
+                    </div>
                 </form>
+
             </article>
         </section>
     </main>
     <footer>
-        <p>Link Social</p>
-        <figure>
-            <a href="#">
-                <img href "#" class="resizeFooter" src="https://picsee.co/images/social_facebook.png" alt="facebook">
-            </a>
-            <a href="#">
-                <img class="resizeFooter" src="http://iapr-tc11.org/mediawiki/images/Twitter.png" alt="">
-            </a>
-            <a href="#">
-                <img class="resizeFooter" src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/2/28/Instagram_logo.png/revision/latest?cb=20160512084132"
-                    alt="">
-            </a>
-            <a href="#">
-                <img class="resizeFooter" src="https://vignette.wikia.nocookie.net/the-most-popular-girls-in-school/images/1/1a/Linkedin.png/revision/latest?cb=20150730204727"
-                    alt="">
-            </a>
-            <a href="#">
-                <img class="resizeFooter" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Logo_google%2B_2015.png" alt="">
-            </a>
-        </figure>
+            <a href="#"><i id="social-fb" class="marginFooter fab fa-facebook-f fa-3x"></i></a>
+            <a href="#"><i id="social-tw" class="marginFooter fab fa-twitter fa-3x"></i></a>
+            <a href="#"><i id="social-tw" class="marginFooter fab fa-google-plus fa-3x"></i></a>
+            <a href="#"><i id="social-em" class="marginFooter fa fa-envelope-square fa-3x"></i></a>
     </footer>
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
     <script src="../javascript/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 
 </html>
