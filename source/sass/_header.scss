@@ -1,5 +1,4 @@
 @import "_variable.scss";
-
 header {
     display: flex;
     flex-direction: column;
@@ -13,5 +12,5 @@ header {
 }
 
 h5 {
-    color: $colorTextHeader;
+    color: $colorTextHeader; 
 }
