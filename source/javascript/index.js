@@ -63,7 +63,7 @@ function carica(id, value) {// funzione di caricamento
     if (value === undefined) {
         if (id === 'image') {
             name.src = "";
-        } else { name.innerText = "pippo"; }
+        } else { name.innerText = ""; }
     }
     else {
         if (id === 'image') {
